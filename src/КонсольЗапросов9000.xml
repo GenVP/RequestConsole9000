@@ -19,7 +19,7 @@
 					<v8:content>Консоль запросов 9000</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>доп. версия 1</Comment>
+			<Comment/>
 			<DefaultForm>ExternalDataProcessor.КонсольЗапросов9000.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>

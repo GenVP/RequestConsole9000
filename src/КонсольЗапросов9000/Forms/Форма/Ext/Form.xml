@@ -110,11 +110,13 @@
 				</InputField>
 				<Button name="ВидимостьСпискаЗапросов" id="524">
 					<Type>UsualButton</Type>
+					<Check>true</Check>
 					<CommandName>Form.Command.ВидимостьСпискаЗапросов</CommandName>
 					<ExtendedTooltip name="ВидимостьСпискаЗапросовРасширеннаяПодсказка" id="525"/>
 				</Button>
 				<Button name="ВидимостьНастроекЗапроса" id="522">
 					<Type>UsualButton</Type>
+					<Check>true</Check>
 					<CommandName>Form.Command.ВидимостьНастроекЗапроса</CommandName>
 					<ExtendedTooltip name="ВидимостьНастроекЗапросаРасширеннаяПодсказка" id="523"/>
 				</Button>
@@ -1130,6 +1132,8 @@
 													<ExtendedTooltip name="ГруппаАлгоритмИницализацииРасширеннаяПодсказка" id="512"/>
 													<ChildItems>
 														<LabelDecoration name="ДекорацияАлгоритмМВТИнфо" id="519">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
 															<TextColor>web:Blue</TextColor>
 															<Title formatted="false">
 																<v8:item>
@@ -1137,6 +1141,13 @@
 																	<v8:content>Параметры алгоритма: МенеджерВременныхТаблиц, Параметры</v8:content>
 																</v8:item>
 															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Структура "Параметры" заполняется из параметров запроса. "МенеджерВременныхТаблиц" для заполнении в коде алгоритма, будет передан в запрос при выполнении.</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
 															<ContextMenu name="ДекорацияАлгоритмМВТИнфоКонтекстноеМеню" id="520"/>
 															<ExtendedTooltip name="ДекорацияАлгоритмМВТИнфоРасширеннаяПодсказка" id="521"/>
 														</LabelDecoration>
@@ -1190,13 +1201,22 @@
 													<ExtendedTooltip name="ВыполнитьАлгоритмЗаполненияРасширеннаяПодсказка" id="542"/>
 												</Button>
 												<LabelDecoration name="ДекорацияАлгоритмЗаполненияИнфо" id="534">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
 													<TextColor>web:Blue</TextColor>
 													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Параметры алгоритма: ТекстЗапроса, Параметры</v8:content>
+															<v8:content>Параметры алгоритма: Текст, Параметры, МенеджерВременныхТаблиц</v8:content>
 														</v8:item>
 													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметры для заполнения в коде алгоритма. После выполнения текст запроса, его параметры и временные таблицы будут заполнены на форме</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
 													<ContextMenu name="ДекорацияАлгоритмЗаполненияИнфоКонтекстноеМеню" id="535"/>
 													<ExtendedTooltip name="ДекорацияАлгоритмЗаполненияИнфоРасширеннаяПодсказка" id="536"/>
 												</LabelDecoration>
@@ -4218,7 +4238,7 @@
 				<xr:Ref>StdPicture.ExternalDataSourceTable</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ПереключитьВидимостьНастроекЗапроса</Action>
+			<Action>Команда_ПереключитьВидимостьНастроекЗапроса</Action>
 			<Representation>Picture</Representation>
 		</Command>
 		<Command name="ВидимостьСпискаЗапросов" id="38">
@@ -4238,7 +4258,7 @@
 				<xr:Ref>StdPicture.ExternalDataSourceFunction</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ВидимостьСпискаЗапросов</Action>
+			<Action>Команда_ПереключитьВидимостьСпискаЗапросов</Action>
 			<Representation>Picture</Representation>
 		</Command>
 		<Command name="ВыполнитьАлгоритмЗаполнения" id="40">
@@ -4254,7 +4274,7 @@
 					<v8:content>Выполнить алгоритм заполнения</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ВыполнитьАлгоритмЗаполнения</Action>
+			<Action>Команда_ВыполнитьАлгоритмЗаполнения</Action>
 		</Command>
 	</Commands>
 </Form>
