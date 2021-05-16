@@ -136,12 +136,103 @@
 					<HorizontalLocation>Right</HorizontalLocation>
 					<ExtendedTooltip name="КоманднаяПанельФормыПравоРасширеннаяПодсказка" id="259"/>
 					<ChildItems>
+						<Popup name="ПакетЗапросовПодменюПерехват" id="226">
+							<Enabled>false</Enabled>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перехват</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пакет запросов подменю перехват</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПакетЗапросовПодменюПерехватРасширеннаяПодсказка" id="227"/>
+							<ChildItems>
+								<Button name="ПакетЗапросовПолучитьКодДляЗахватаВОтладчике" id="230">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПолучитьКодДляПерехватаВОтладчике</CommandName>
+									<ExtendedTooltip name="ПакетЗапросовПолучитьКодДляЗахватаВОтладчикеРасширеннаяПодсказка" id="231"/>
+								</Button>
+								<Button name="ПакетЗапросовПолучитьПерехваченныеЗапросы" id="228">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПолучитьПерехваченныеЗапросы</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ПакетЗапросовПолучитьПерехваченныеЗапросыРасширеннаяПодсказка" id="229"/>
+								</Button>
+								<Button name="ПакетЗапросовУдалитьПерехваченныеЗапросы" id="392">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.УдалитьПерехваченныеЗапросы</CommandName>
+									<ExtendedTooltip name="ПакетЗапросовУдалитьПерехваченныеЗапросыРасширеннаяПодсказка" id="393"/>
+								</Button>
+							</ChildItems>
+						</Popup>
 						<Button name="ТехнологическийЖурнал" id="501">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.ТехнологическийЖурнал</CommandName>
 							<LocationInCommandBar>InCommandBar</LocationInCommandBar>
 							<ExtendedTooltip name="ТехнологическийЖурналРасширеннаяПодсказка" id="502"/>
 						</Button>
+						<Popup name="ГруппаПакетЗапросовПодменюЕще" id="543">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Еще</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Еще</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаПакетЗапросовПодменюЕщеРасширеннаяПодсказка" id="544"/>
+							<ChildItems>
+								<Button name="ДобавитьКомментированиеСтрокВТекстЗапроса" id="206">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ДобавитьКомментированиеСтрокВТекст</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ДобавитьКомментированиеСтрокВТекстЗапросаРасширеннаяПодсказка" id="207"/>
+								</Button>
+								<Button name="УбратьКомментированиеСтрокИзТекстаЗапроса" id="208">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.УбратьКомментированиеСтрокИзТекста</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="УбратьКомментированиеСтрокИзТекстаЗапросаРасширеннаяПодсказка" id="209"/>
+								</Button>
+								<Button name="ДобавитьПереносСтрокВТекстЗапроса" id="178">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ДобавитьПереносСтрокВТекст</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ДобавитьПереносСтрокВТекстЗапросаРасширеннаяПодсказка" id="179"/>
+								</Button>
+								<Button name="УбратьПереносСтрокИзТекстаЗапроса" id="176">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.УбратьПереносСтрокИзТекста</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="УбратьПереносСтрокИзТекстаЗапросаРасширеннаяПодсказка" id="177"/>
+								</Button>
+							</ChildItems>
+						</Popup>
 						<Button name="ФормаИзменитьФорму" id="254">
 							<Type>CommandBarButton</Type>
 							<Representation>Picture</Representation>
@@ -284,40 +375,6 @@
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
-											<Popup name="ПакетЗапросовПодменюПерехват" id="226">
-												<Enabled>false</Enabled>
-												<Title>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Перехват</v8:content>
-													</v8:item>
-												</Title>
-												<ToolTip>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Пакет запросов подменю перехват</v8:content>
-													</v8:item>
-												</ToolTip>
-												<ExtendedTooltip name="ПакетЗапросовПодменюПерехватРасширеннаяПодсказка" id="227"/>
-												<ChildItems>
-													<Button name="ПакетЗапросовПолучитьКодДляЗахватаВОтладчике" id="230">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПолучитьКодДляПерехватаВОтладчике</CommandName>
-														<ExtendedTooltip name="ПакетЗапросовПолучитьКодДляЗахватаВОтладчикеРасширеннаяПодсказка" id="231"/>
-													</Button>
-													<Button name="ПакетЗапросовПолучитьПерехваченныеЗапросы" id="228">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПолучитьПерехваченныеЗапросы</CommandName>
-														<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-														<ExtendedTooltip name="ПакетЗапросовПолучитьПерехваченныеЗапросыРасширеннаяПодсказка" id="229"/>
-													</Button>
-													<Button name="ПакетЗапросовУдалитьПерехваченныеЗапросы" id="392">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.УдалитьПерехваченныеЗапросы</CommandName>
-														<ExtendedTooltip name="ПакетЗапросовУдалитьПерехваченныеЗапросыРасширеннаяПодсказка" id="393"/>
-													</Button>
-												</ChildItems>
-											</Popup>
 										</ChildItems>
 									</AutoCommandBar>
 									<ExtendedTooltip name="ПакетЗапросовРасширеннаяПодсказка" id="32"/>
@@ -587,46 +644,6 @@
 																	</Picture>
 																	<ExtendedTooltip name="ФорматироватьТекстЗапросаРасширеннаяПодсказка" id="213"/>
 																</Button>
-																<Button name="ДобавитьПереносСтрокВТекстЗапроса" id="178">
-																	<Type>UsualButton</Type>
-																	<Representation>Picture</Representation>
-																	<CommandName>Form.Command.ДобавитьПереносСтрокВТекст</CommandName>
-																	<Picture>
-																		<xr:Abs>Picture.png</xr:Abs>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
-																	</Picture>
-																	<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-																	<ExtendedTooltip name="ДобавитьПереносСтрокВТекстЗапросаРасширеннаяПодсказка" id="179"/>
-																</Button>
-																<Button name="УбратьПереносСтрокИзТекстаЗапроса" id="176">
-																	<Type>UsualButton</Type>
-																	<Representation>Picture</Representation>
-																	<CommandName>Form.Command.УбратьПереносСтрокИзТекста</CommandName>
-																	<Picture>
-																		<xr:Abs>Picture.png</xr:Abs>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
-																	</Picture>
-																	<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-																	<ExtendedTooltip name="УбратьПереносСтрокИзТекстаЗапросаРасширеннаяПодсказка" id="177"/>
-																</Button>
-																<Button name="ДобавитьКомментированиеСтрокВТекстЗапроса" id="206">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ДобавитьКомментированиеСтрокВТекст</CommandName>
-																	<Picture>
-																		<xr:Abs>Picture.png</xr:Abs>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
-																	</Picture>
-																	<ExtendedTooltip name="ДобавитьКомментированиеСтрокВТекстЗапросаРасширеннаяПодсказка" id="207"/>
-																</Button>
-																<Button name="УбратьКомментированиеСтрокИзТекстаЗапроса" id="208">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.УбратьКомментированиеСтрокИзТекста</CommandName>
-																	<Picture>
-																		<xr:Abs>Picture.png</xr:Abs>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
-																	</Picture>
-																	<ExtendedTooltip name="УбратьКомментированиеСтрокИзТекстаЗапросаРасширеннаяПодсказка" id="209"/>
-																</Button>
 																<Button name="ВставитьПредопределенноеЗначение" id="365">
 																	<Type>UsualButton</Type>
 																	<CommandName>Form.Command.ВставитьПредопределенноеЗначение</CommandName>
@@ -673,22 +690,6 @@
 																	<CommandName>Form.Command.ЗаполнитьИзXML</CommandName>
 																	<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 																	<ExtendedTooltip name="КомандаЗаполнитьИзXMLРасширеннаяПодсказка" id="110"/>
-																</Button>
-																<Button name="ПолучитьПерехваченныеЗапросы" id="224">
-																	<Type>CommandBarButton</Type>
-																	<CommandName>Form.Command.ПолучитьПерехваченныеЗапросы</CommandName>
-																	<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-																	<ExtendedTooltip name="ПолучитьПерехваченныеЗапросыРасширеннаяПодсказка" id="225"/>
-																</Button>
-																<Button name="ПолучитьКодДляЗахватаВОтладчике" id="222">
-																	<Type>CommandBarButton</Type>
-																	<CommandName>Form.Command.ПолучитьКодДляПерехватаВОтладчике</CommandName>
-																	<Picture>
-																		<xr:Ref>StdPicture.DataCompositionSettingsWizard</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
-																	</Picture>
-																	<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-																	<ExtendedTooltip name="ПолучитьКодДляЗахватаВОтладчикеРасширеннаяПодсказка" id="223"/>
 																</Button>
 															</ChildItems>
 														</CommandBar>
@@ -1263,63 +1264,6 @@
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ВерхняяПанельКодаРасширеннаяПодсказка" id="370"/>
 											<ChildItems>
-												<CommandBar name="ГруппаКоманднаяПанельКода" id="361">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа командная панель кода</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа командная панель кода</v8:content>
-														</v8:item>
-													</ToolTip>
-													<ExtendedTooltip name="ГруппаКоманднаяПанельКодаРасширеннаяПодсказка" id="362"/>
-													<ChildItems>
-														<Button name="ДобавитьПереносСтрокВТекстЗапроса1" id="374">
-															<Type>CommandBarButton</Type>
-															<Representation>Picture</Representation>
-															<CommandName>Form.Command.ДобавитьПереносСтрокВТекст</CommandName>
-															<Picture>
-																<xr:Abs>Picture.png</xr:Abs>
-																<xr:LoadTransparent>false</xr:LoadTransparent>
-															</Picture>
-															<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-															<ExtendedTooltip name="ДобавитьПереносСтрокВТекстЗапроса1РасширеннаяПодсказка" id="375"/>
-														</Button>
-														<Button name="УбратьПереносСтрокИзТекстаЗапроса1" id="376">
-															<Type>CommandBarButton</Type>
-															<Representation>Picture</Representation>
-															<CommandName>Form.Command.УбратьПереносСтрокИзТекста</CommandName>
-															<Picture>
-																<xr:Abs>Picture.png</xr:Abs>
-																<xr:LoadTransparent>false</xr:LoadTransparent>
-															</Picture>
-															<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-															<ExtendedTooltip name="УбратьПереносСтрокИзТекстаЗапроса1РасширеннаяПодсказка" id="377"/>
-														</Button>
-														<Button name="ДобавитьКомментированиеСтрокВТекстЗапроса1" id="378">
-															<Type>CommandBarButton</Type>
-															<CommandName>Form.Command.ДобавитьКомментированиеСтрокВТекст</CommandName>
-															<Picture>
-																<xr:Abs>Picture.png</xr:Abs>
-																<xr:LoadTransparent>false</xr:LoadTransparent>
-															</Picture>
-															<ExtendedTooltip name="ДобавитьКомментированиеСтрокВТекстЗапроса1РасширеннаяПодсказка" id="379"/>
-														</Button>
-														<Button name="УбратьКомментированиеСтрокИзТекстаЗапроса1" id="380">
-															<Type>CommandBarButton</Type>
-															<CommandName>Form.Command.УбратьКомментированиеСтрокИзТекста</CommandName>
-															<Picture>
-																<xr:Abs>Picture.png</xr:Abs>
-																<xr:LoadTransparent>false</xr:LoadTransparent>
-															</Picture>
-															<ExtendedTooltip name="УбратьКомментированиеСтрокИзТекстаЗапроса1РасширеннаяПодсказка" id="381"/>
-														</Button>
-													</ChildItems>
-												</CommandBar>
 												<UsualGroup name="ГруппаПанельИсполнения" id="382">
 													<Title>
 														<v8:item>
