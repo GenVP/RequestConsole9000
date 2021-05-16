@@ -3694,7 +3694,6 @@
 			</ToolTip>
 			<Shortcut>Ctrl+Num /</Shortcut>
 			<Action>Команда_ДобавитьКомментированиеСтрокВТекст</Action>
-			<Representation>Picture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="УбратьКомментированиеСтрокИзТекста" id="14">
@@ -3712,7 +3711,6 @@
 			</ToolTip>
 			<Shortcut>Ctrl+Shift+Num /</Shortcut>
 			<Action>Команда_УбратьКомментированиеСтрокИзТекста</Action>
-			<Representation>Picture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СинтаксическийКонтрольЗапроса" id="15">
