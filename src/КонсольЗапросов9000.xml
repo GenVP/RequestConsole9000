@@ -708,6 +708,7 @@
 			<Template>Картинки</Template>
 			<Template>СправкаАлгоритм</Template>
 			<Template>МакетКонфигурацииТЖ</Template>
+			<Template>VanessaEditor</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
